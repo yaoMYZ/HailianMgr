@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HailianMgr</string>
+    <!-- string in login page-->
+    <string name="login_account">Account</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot">Forgot Password?</string>
+    <string name="login_tittle">Hailian</string>
+    <string name="login_signup">Sign up</string>
+    <string name="login_Signin">Sign in</string>
+    <string name="login_tip">Tip</string>
+    <string name="login_login_error">Incorrect account or password!</string>
+    <!--    string in home page-->
+    <string name="home_page">Home page</string>
+
+</resources>
