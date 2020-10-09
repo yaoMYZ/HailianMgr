@@ -11,5 +11,16 @@
     <string name="login_login_error">Incorrect account or password!</string>
     <!--    string in home page-->
     <string name="home_page">Home page</string>
-
+    <!--    string in sign up-->
+    <string name="signup">Sign up</string>
+    <string name="signup_phone">Phone</string>
+    <string name="signup_phone_hint">Please input your phone</string>
+    <string name="signup_psw">Password</string>
+    <string name="signup_psw_hint">Please input your password.</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_name_hint">Please input your name</string>
+    <string name="signup_sex">Sex</string>
+    <string name="signup_sex_man">Man</string>
+    <string name="signup_sex_woman">Woman</string>
+    <string name="signup_position">Position</string>
 </resources>

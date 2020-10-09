@@ -18,6 +18,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.login);
     }
 
+    public void signUp(View view){
+        Intent intent = new Intent(this,Signup.class);
+        startActivity(intent);
+    }
+
     public void toHomePage(View view){
         if(verify()){
             Intent intent = new Intent(this,HomePage.class);
