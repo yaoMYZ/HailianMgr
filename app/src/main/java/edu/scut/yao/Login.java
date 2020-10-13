@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
     }
 
     private boolean verify(){
-        EditText editTextAccount = findViewById(R.id.login_account);
+        EditText editTextAccount = findViewById(R.id.login_phone);
         String account = editTextAccount.getText().toString();
         EditText editTextPassword = findViewById(R.id.login_password);
         String password = editTextPassword.getText().toString();

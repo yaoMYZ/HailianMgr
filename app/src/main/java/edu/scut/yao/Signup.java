@@ -23,8 +23,9 @@ public class Signup extends AppCompatActivity {
         final String[] pos=this.getPositions();
         Spinner spinner = findViewById(R.id.signup_position_spinner);
         // 建立Adapter并且绑定数据源
-        ArrayAdapter<String> adapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, pos);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> adapter=new ArrayAdapter<>(this,R.layout.spinner_item, pos);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         //绑定 Adapter到控件
         spinner .setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -42,7 +43,12 @@ public class Signup extends AppCompatActivity {
     }
 
     private String[] getPositions(){
-        return new String[]{"管理层","采购","生产","财务"};
+        String []strings = new String[30];
+        for (int i=0;i<strings.length;i++){
+            strings[i] = "样例".concat(String.valueOf(i));
+        }
+        return strings;
+//        return new String[]{"管理层","采购","生产","财务","仓库","业务","外发"};
     }
 
 

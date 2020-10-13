@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="textInputLayout">#96ffffff</color>
+
+    <color name="materialLightBlue700">#0288D1</color>
+    <color name="materialLightBlue300">#4FC3F7</color>
+    <color name="materialGrey300">#E0E0E0</color>
+    <color name="loginTextColor">#FFFFFF</color>
 </resources>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HailianMgr</string>
     <!-- string in login page-->
-    <string name="login_account">Account</string>
+    <string name="login_phone">Phone</string>
     <string name="login_password">Password</string>
     <string name="login_forgot">Forgot Password?</string>
     <string name="login_tittle">Hailian</string>
@@ -13,14 +13,12 @@
     <string name="home_page">Home page</string>
     <!--    string in sign up-->
     <string name="signup">Sign up</string>
-    <string name="signup_phone">Phone</string>
-    <string name="signup_phone_hint">Please input your phone</string>
-    <string name="signup_psw">Password</string>
-    <string name="signup_psw_hint">Please input your password.</string>
+    <string name="signup_welcome">Welcome!</string>
+    <string name="signup_excited">We are excited to see you here!</string>
     <string name="signup_name">Name</string>
-    <string name="signup_name_hint">Please input your name</string>
     <string name="signup_sex">Sex</string>
     <string name="signup_sex_man">Man</string>
     <string name="signup_sex_woman">Woman</string>
     <string name="signup_position">Position</string>
+    <string name="signup_have_account">Already have an account?</string>
 </resources>

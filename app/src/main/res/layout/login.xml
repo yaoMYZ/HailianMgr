@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/login_background"
     tools:context=".Login">
 
     <LinearLayout
@@ -17,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -25,7 +24,7 @@
             android:fontFamily="@font/damion"
             android:gravity="center"
             android:text="@string/login_tittle"
-            android:textColor="#96ffffff"
+            android:textColor="@color/loginTextColor"
             android:textSize="50sp" />
     </LinearLayout>
 
@@ -46,19 +45,19 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="#96ffffff"
+            android:textColorHint="@color/loginTextColor"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/login_account"
+                android:id="@+id/login_phone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
-                android:drawableEnd="@drawable/login_account"
+                android:drawableEnd="@drawable/phone"
                 android:drawablePadding="16dp"
                 android:fontFamily="monospace"
-                android:hint="@string/login_account"
-                android:inputType="textEmailAddress"
+                android:hint="@string/login_phone"
+                android:inputType="phone"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
@@ -67,7 +66,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="#96ffffff"
+            android:textColorHint="@color/loginTextColor"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
@@ -75,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
-                android:drawableEnd="@drawable/login_password"
+                android:drawableEnd="@drawable/password"
                 android:drawablePadding="16dp"
                 android:fontFamily="monospace"
                 android:hint="@string/login_password"
@@ -103,7 +102,7 @@
                 android:onClick="signUp"
                 android:text="@string/login_signup"
                 android:textAllCaps="false"
-                android:textColor="#96ffffff"
+                android:textColor="@color/loginTextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -117,7 +116,7 @@
                 android:onClick="toHomePage"
                 android:text="@string/login_Signin"
                 android:textAllCaps="false"
-                android:textColor="#96ffffff"
+                android:textColor="@color/loginTextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -133,7 +132,7 @@
             android:fontFamily="monospace"
             android:text="@string/login_forgot"
             android:textAlignment="center"
-            android:textColor="#96ffffff"
+            android:textColor="@color/loginTextColor"
             android:textSize="16sp" />
 
 
