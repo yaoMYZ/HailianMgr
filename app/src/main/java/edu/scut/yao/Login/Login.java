@@ -1,14 +1,16 @@
-package edu.scut.yao;
+package edu.scut.yao.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import edu.scut.yao.HomePage;
+import edu.scut.yao.R;
 
 public class Login extends AppCompatActivity {
 
@@ -25,7 +27,7 @@ public class Login extends AppCompatActivity {
 
     public void toHomePage(View view){
         if(verify()){
-            Intent intent = new Intent(this,HomePage.class);
+            Intent intent = new Intent(this, HomePage.class);
             startActivity(intent);
         }else{
             new AlertDialog.Builder(this)
@@ -37,15 +39,15 @@ public class Login extends AppCompatActivity {
     }
 
     private boolean verify(){
-        EditText editTextAccount = findViewById(R.id.login_phone);
-        String account = editTextAccount.getText().toString();
-        EditText editTextPassword = findViewById(R.id.login_password);
-        String password = editTextPassword.getText().toString();
-        if(account.equals("root") && password.equals("12345")){
+        EditText phone = findViewById(R.id.login_phone);
+        String account = phone.getText().toString();
+        EditText password = findViewById(R.id.login_password);
+        String psw = password.getText().toString();
+        if(account.equals("12345") && psw.equals("12345")){
             SharedPreferences sharedPreferences = getSharedPreferences("user",MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("account",account);
-            editor.putString("pssword",password);
+            editor.putString("phone",account);
+            editor.putString("pssword",psw);
             editor.apply();
             return true;
         }

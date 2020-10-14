@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
-    tools:context=".Signup">
+    tools:context=".Login.Signup">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/login_phone"
+                android:id="@+id/signup_phone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
@@ -80,7 +80,7 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/login_password"
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
@@ -140,7 +140,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/signup_sex_choose_man"
+                    android:id="@+id/signup_sex_man"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/signup_sex_man"
@@ -150,7 +150,7 @@
                     android:layout_marginEnd="10dp"/>
 
                 <RadioButton
-                    android:id="@+id/signup_sex_choose_woman"
+                    android:id="@+id/signup_sex_woman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/signup_sex_woman"
@@ -191,6 +191,7 @@
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_button_background"
+            android:onClick="signUp"
             android:text="@string/signup"
             android:textAllCaps="false"
             android:textColor="@color/materialLightBlue700"
@@ -214,12 +215,14 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_content" />
+
     <TextView
         android:id="@+id/tvSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="signIn"
         android:text="@string/login_Signin"
         android:textColor="@color/loginTextColor"
         android:textStyle="bold"
