@@ -39,18 +39,19 @@ public class Login extends AppCompatActivity {
     }
 
     private boolean verify(){
-        EditText phone = findViewById(R.id.login_phone);
-        String account = phone.getText().toString();
-        EditText password = findViewById(R.id.login_password);
-        String psw = password.getText().toString();
-        if(account.equals("12345") && psw.equals("12345")){
-            SharedPreferences sharedPreferences = getSharedPreferences("user",MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("phone",account);
-            editor.putString("pssword",psw);
-            editor.apply();
-            return true;
-        }
-        return false;
+        return true;
+//        EditText ic_phone = findViewById(R.id.login_phone);
+//        String account = ic_phone.getText().toString();
+//        EditText ic_password = findViewById(R.id.login_password);
+//        String psw = ic_password.getText().toString();
+//        if(account.equals("12345") && psw.equals("12345")){
+//            SharedPreferences sharedPreferences = getSharedPreferences("user",MODE_PRIVATE);
+//            SharedPreferences.Editor editor = sharedPreferences.edit();
+//            editor.putString("ic_phone",account);
+//            editor.putString("pssword",psw);
+//            editor.apply();
+//            return true;
+//        }
+//        return false;
     }
 }

@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
-                android:drawableEnd="@drawable/phone"
+                android:drawableEnd="@drawable/ic_phone"
                 android:drawablePadding="16dp"
                 android:fontFamily="monospace"
                 android:hint="@string/login_phone"
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
-                android:drawableEnd="@drawable/password"
+                android:drawableEnd="@drawable/ic_password"
                 android:drawablePadding="16dp"
                 android:fontFamily="monospace"
                 android:hint="@string/login_password"
@@ -105,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints=""
-                android:drawableEnd="@drawable/person"
+                android:drawableEnd="@drawable/ic_person"
                 android:drawablePadding="16dp"
                 android:fontFamily="monospace"
                 android:hint="@string/signup_name"
@@ -174,6 +174,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/signup_position"
+                android:textSize="16sp"
                 android:textColor="@color/loginTextColor" />
 
             <Spinner

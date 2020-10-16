@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">海联业务管理系统</string>
+    <!-- string in login page-->
+    <string name="login_phone">手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_forgot">忘记密码?</string>
+    <string name="login_tittle">Hailian</string>
+    <string name="login_signup">注册</string>
+    <string name="login_Signin">登录</string>
+    <string name="login_tip">提示</string>
+    <string name="login_login_error">手机号或者密码不正确!</string>
+
+    <!--    string in sign up-->
+    <string name="signup">注册</string>
+    <string name="signup_welcome">欢迎!</string>
+    <string name="signup_excited">我们十分期待您的到来!</string>
+    <string name="signup_name">姓名</string>
+    <string name="signup_sex">性别</string>
+    <string name="signup_sex_man">男</string>
+    <string name="signup_sex_woman">女</string>
+    <string name="signup_position">职位</string>
+    <string name="signup_have_account">已经拥有账号?</string>
+    <!--    string in home page-->
+    <string name="home_page">主页</string>
+    <!--    string in home -->
+    <string name="home">首页</string>
+    <!--    string in User -->
+    <string name="user">用户</string>
+    <!--    string in Notifications -->
+    <string name="notifications">消息</string>
+</resources>
