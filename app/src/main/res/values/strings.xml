@@ -9,8 +9,7 @@
     <string name="login_Signin">Sign in</string>
     <string name="login_tip">Tip</string>
     <string name="login_login_error">Incorrect account or password!</string>
-    <!--    string in home page-->
-    <string name="home_page">Home page</string>
+
     <!--    string in sign up-->
     <string name="signup">Sign up</string>
     <string name="signup_welcome">Welcome!</string>
@@ -21,4 +20,9 @@
     <string name="signup_sex_woman">Woman</string>
     <string name="signup_position">Position</string>
     <string name="signup_have_account">Already have an account?</string>
+    <!--    string in home page-->
+    <string name="home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
