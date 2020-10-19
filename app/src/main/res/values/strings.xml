@@ -22,6 +22,7 @@
     <string name="signup_have_account">Already have an account?</string>
     <!--    string in home page-->
     <string name="home_page">HomePage</string>
+    <string name="home_page_exit_hint">click once more to exit</string>
     <!--    string in home -->
     <string name="home">Home</string>
     <!--    string in User -->

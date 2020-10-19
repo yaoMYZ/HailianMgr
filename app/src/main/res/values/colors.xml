@@ -7,6 +7,8 @@
 
     <color name="materialLightBlue700">#0288D1</color>
     <color name="materialLightBlue300">#4FC3F7</color>
+    <color name="materialGrey700">#616161</color>
     <color name="materialGrey300">#E0E0E0</color>
+    <color name="materialGrey100">#F5F5F5</color>
     <color name="loginTextColor">#FFFFFF</color>
 </resources>

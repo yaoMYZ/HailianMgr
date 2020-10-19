@@ -27,7 +27,8 @@ public class Login extends AppCompatActivity {
 
     public void toHomePage(View view){
         if(verify()){
-            Intent intent = new Intent(this, HomePage.class);
+            Intent intent = new Intent(this,HomePage.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }else{
             new AlertDialog.Builder(this)

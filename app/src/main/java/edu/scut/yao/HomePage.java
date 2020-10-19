@@ -1,6 +1,7 @@
 package edu.scut.yao;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -25,6 +26,19 @@ public class HomePage extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+    }
+
+    private static final int TIME_EXIT=2000;
+    private long mBackPressed=0;
+
+    @Override
+    public void onBackPressed(){
+        if(mBackPressed+TIME_EXIT>System.currentTimeMillis()){
+            super.onBackPressed();
+        }else{
+            Toast.makeText(this,"再点击一次返回退出程序",Toast.LENGTH_SHORT).show();
+            mBackPressed=System.currentTimeMillis();
+        }
     }
 
 }
