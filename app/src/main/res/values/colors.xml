@@ -11,4 +11,7 @@
     <color name="materialGrey300">#E0E0E0</color>
     <color name="materialGrey100">#F5F5F5</color>
     <color name="loginTextColor">#FFFFFF</color>
+
+    <color name="darkgray">#cccc</color>
+    <color name="color_white">#ffffff</color>
 </resources>

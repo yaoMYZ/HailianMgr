@@ -25,6 +25,7 @@
     <string name="home_page_exit_hint">click once more to exit</string>
     <!--    string in home -->
     <string name="home">Home</string>
+    <string name="home_search">search</string>
     <!--    string in User -->
     <string name="user">User</string>
     <!--    string in Notifications -->
