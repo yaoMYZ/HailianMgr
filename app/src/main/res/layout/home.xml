@@ -6,35 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <LinearLayout
+    <TableLayout
+        android:id="@+id/home_table_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/home_search_btn"
+        <!--        tools:layout_editor_absoluteY="70dp"-->
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/search_shape"
-            android:drawableStart="@drawable/ic_search"
-            android:text="@string/home_search" />
-
-        <TextView
-            android:id="@+id/home_announcement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textSize="15sp"
-            app:drawableStartCompat="@drawable/ic_announcement" />
-    </LinearLayout>
+            android:layout_marginEnd="8dp">
+            <Button
+                android:id="@+id/home_search_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="34dp"
+
+                android:background="@drawable/search_box_shape"
+                android:drawableStart="@drawable/ic_search"
+                android:text="@string/home_search"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+            <TextView
+                android:id="@+id/home_announcement"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_announcement" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp">
+
+            <Button
+                android:id="@+id/home_business"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_business"
+                android:background="@drawable/rounded_angle_btn_blue"
+                android:textColor="@color/materialGrey700"
+                android:text="@string/home_business"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/home_produce"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_produce"
+                android:background="@drawable/rounded_angle_btn_blue"
+                android:textColor="@color/materialGrey700"
+                android:text="@string/home_produce"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+            <Button
+                android:id="@+id/home_production"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_production"
+                android:background="@drawable/rounded_angle_btn_blue"
+                android:textColor="@color/materialGrey700"
+                android:text="@string/home_production"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/home_warehouse"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_warehouse"
+                android:background="@drawable/rounded_angle_btn_blue"
+                android:textColor="@color/materialGrey700"
+                android:text="@string/home_warehouse"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"/>
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

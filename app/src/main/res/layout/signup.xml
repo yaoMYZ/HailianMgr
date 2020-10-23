@@ -191,7 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:background="@drawable/rounded_button_background"
+            android:background="@drawable/rounded_button_white"
             android:onClick="signUp"
             android:text="@string/signup"
             android:textAllCaps="false"

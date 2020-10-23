@@ -26,6 +26,10 @@
     <!--    string in home -->
     <string name="home">Home</string>
     <string name="home_search">search</string>
+    <string name="home_business">business</string>
+    <string name="home_produce">produce</string>
+    <string name="home_production">production</string>
+    <string name="home_warehouse">warehouse</string>
     <!--    string in User -->
     <string name="user">User</string>
     <!--    string in Notifications -->
