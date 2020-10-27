@@ -1,4 +1,4 @@
-package edu.scut.yao.ui.notifications;
+package edu.scut.yao.home_page.user;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import edu.scut.yao.R;
 
-public class NotificationsFragment extends Fragment {
+public class UserFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private UserViewModel userViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        userViewModel =
+                ViewModelProviders.of(this).get(UserViewModel.class);
+        View root = inflater.inflate(R.layout.user, container, false);
+        final TextView textView = root.findViewById(R.id.text_dashboard);
+        userViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

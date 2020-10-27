@@ -1,18 +1,31 @@
 package edu.scut.yao.pojo;
 
 public class User {
+    private int id;
     private String phone;
     private String password;
     private String name;
     private int sex;
     private int position;
 
-    public User(String phone, String password, String name, int sex, int position) {
+    public User() {
+    }
+
+    public User(int id, String phone, String password, String name, int sex, int position) {
+        this.id = id;
         this.phone = phone;
         this.password = password;
         this.name = name;
         this.sex = sex;
         this.position = position;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getPhone() {

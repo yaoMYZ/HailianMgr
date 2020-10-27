@@ -29,8 +29,10 @@
     <string name="home_search">搜索</string>
     <string name="home_business">业务</string>
     <string name="home_produce">生产</string>
-    <string name="home_production">产品</string>
+    <string name="home_product">产品</string>
     <string name="home_warehouse">仓库</string>
+    <string name="home_contract">合同</string>
+    <string name="home_series">系列</string>
     <!--    string in User -->
     <string name="user">用户</string>
     <!--    string in Notifications -->

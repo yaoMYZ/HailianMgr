@@ -1,6 +1,8 @@
-package edu.scut.yao;
+package edu.scut.yao.home_page;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -10,6 +12,9 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import edu.scut.yao.R;
+import edu.scut.yao.product.Series;
 
 public class HomePage extends AppCompatActivity {
 
@@ -40,5 +45,6 @@ public class HomePage extends AppCompatActivity {
             mBackPressed=System.currentTimeMillis();
         }
     }
+
 
 }
