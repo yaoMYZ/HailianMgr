@@ -20,6 +20,14 @@ public class User {
         this.position = position;
     }
 
+    public User(String phone, String password, String name, int sex, int position) {
+        this.phone = phone;
+        this.password = password;
+        this.name = name;
+        this.sex = sex;
+        this.position = position;
+    }
+
     public int getId() {
         return id;
     }

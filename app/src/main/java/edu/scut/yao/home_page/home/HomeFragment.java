@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 
 import edu.scut.yao.R;
+import edu.scut.yao.product.Product;
 import edu.scut.yao.product.Series;
 
 public class HomeFragment extends Fragment {
@@ -58,7 +59,7 @@ public class HomeFragment extends Fragment {
         series.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(getActivity(),Series.class);//你的fragment是
+                Intent intent = new Intent(getActivity(), Product.class);//你的fragment是
 
                 startActivity(intent);
             }

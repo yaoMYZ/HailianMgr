@@ -1,25 +1,24 @@
 package edu.scut.yao.product;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import java.util.ArrayList;
+import java.util.List;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import edu.scut.yao.pojo.Product;
 
-public class ProductViewModel extends ViewModel {
+public class ProductViewModel{
 
-    private MutableLiveData<String> announcement;
 
     public ProductViewModel() {
-        announcement = new MutableLiveData<>();
     }
 
-    public LiveData<String> getAnnouncement(){
-        Date date = new Date();
-        SimpleDateFormat sformat = new SimpleDateFormat("yyyy-MM-dd");//日期格式
-        String tiem = sformat.format(date);
-        announcement.setValue(tiem+":本月累计生产186万元，目标产值300万元");
-        return announcement;
+    public List<Product> getProducts(){
+        List<Product> products = new ArrayList<>();
+        for (int i=0;i <100;i++) {
+            Product new_product = new Product();
+            new_product.setDescription("这是个样例");
+            new_product.setName("样例"+ i);
+            products.add(new_product);
+        }
+        return products;
     }
 }
