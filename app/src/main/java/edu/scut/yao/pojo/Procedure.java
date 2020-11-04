@@ -15,6 +15,9 @@ public class Procedure {
         this.updateTime = updateTime;
     }
 
+    public Procedure() {
+    }
+
     public int getId() {
         return id;
     }

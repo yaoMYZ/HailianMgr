@@ -2,7 +2,9 @@ package edu.scut.yao.product;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -40,7 +42,10 @@ public class Product extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 edu.scut.yao.pojo.Product product=products.get(position);
-                Toast.makeText(Product.this,product.getName(),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Product.this, ProductInfo.class);
+                intent.putExtra("product", product);
+                startActivity(intent);
+//                Toast.makeText(Product.this,product.getName(),Toast.LENGTH_SHORT).show();
             }
         });
     }

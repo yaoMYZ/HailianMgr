@@ -5,15 +5,20 @@ import java.util.Date;
 
 public class Series {
     private int id;
+    private String name;
     private ArrayList<Procedure> procedure;
     private Date createTime;
     private Date updateTime;
 
-    public Series(int id, ArrayList<Procedure> procedure, Date createTime, Date updateTime) {
+    public Series(int id, String name, ArrayList<Procedure> procedure, Date createTime, Date updateTime) {
         this.id = id;
+        this.name = name;
         this.procedure = procedure;
         this.createTime = createTime;
         this.updateTime = updateTime;
+    }
+
+    public Series() {
     }
 
     public int getId() {
@@ -24,9 +29,18 @@ public class Series {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public ArrayList<Procedure> getProcedure() {
         return procedure;
     }
+
 
     public void setProcedure(ArrayList<Procedure> procedure) {
         this.procedure = procedure;
