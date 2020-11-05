@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".product.ProductInfo">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,55 +20,182 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <ImageView
-            android:id="@+id/product_info_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/product_info_name"
+            <TextView
+                android:id="@+id/product_info_imageT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_image"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/product_info_image"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_nameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:text="@string/product_name" />
+
+            <EditText
+                android:id="@+id/product_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_desT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_des"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/product_info_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textMultiLine|text"
+                android:textAlignment="textEnd"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_priceT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_price"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/product_info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_stateT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_state"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/product_info_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_seriesT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_series"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/product_info_series"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/materialGrey700"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/product_info_bnt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="text"
-            android:enabled="false"/>
-
-        <EditText
-            android:id="@+id/product_info_des"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="text"
-            android:enabled="false"/>
-
-        <EditText
-            android:id="@+id/product_info_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="text"
-            android:enabled="false"/>
-
-        <EditText
-            android:id="@+id/product_info_state"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="text"
-            android:enabled="false"/>
-
-        <EditText
-            android:id="@+id/product_info_series"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="text"
-            android:enabled="false"/>
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_white"
+            android:text="@string/product_btn1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

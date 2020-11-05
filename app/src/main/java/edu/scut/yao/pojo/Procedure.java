@@ -1,8 +1,9 @@
 package edu.scut.yao.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Procedure {
+public class Procedure implements Serializable {
     private int id;
     private String procedure;
     private Date createTime;

@@ -16,6 +16,7 @@ public class ProductInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_info);
+        initView();
     }
 
     private void initView(){
@@ -24,6 +25,8 @@ public class ProductInfo extends AppCompatActivity {
         assert product != null;
         productImage.setImageResource(product.getImage());
         EditText productName = findViewById(R.id.product_info_name);
+        productName.setText(product.getName());
         EditText productIntro = findViewById(R.id.product_info_des);
+        productIntro.setText(product.getDescription());
     }
 }

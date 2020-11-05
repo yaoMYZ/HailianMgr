@@ -25,15 +25,24 @@
     <string name="home_page_exit_hint">click once more to exit</string>
     <!--    string in home -->
     <string name="home">Home</string>
-    <string name="home_search">search</string>
-    <string name="home_business">business</string>
-    <string name="home_produce">produce</string>
+    <string name="home_search">Search</string>
+    <string name="home_business">Business</string>
+    <string name="home_produce">Produce</string>
     <string name="home_product">product</string>
-    <string name="home_warehouse">warehouse</string>
-    <string name="home_contract">contract</string>
-    <string name="home_series">series</string>
+    <string name="home_warehouse">Warehouse</string>
+    <string name="home_contract">Contract</string>
+    <string name="home_series">Series</string>
     <!--    string in User -->
     <string name="user">User</string>
     <!--    string in Notifications -->
     <string name="notifications">Notifications</string>
+    <!--    string in product -->
+    <string name="product_name">Name</string>
+    <string name="product_image">Image</string>
+    <string name="product_des">Description</string>
+    <string name="product_price">Price</string>
+    <string name="product_series">Series</string>
+    <string name="product_state">State</string>
+    <string name="product_btn1">Edit</string>
+    <string name="product_btn2">Save</string>
 </resources>

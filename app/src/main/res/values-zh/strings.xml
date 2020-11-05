@@ -37,4 +37,13 @@
     <string name="user">用户</string>
     <!--    string in Notifications -->
     <string name="notifications">消息</string>
+    <!--    string in product -->
+    <string name="product_name">名称</string>
+    <string name="product_image">图像</string>
+    <string name="product_des">描述</string>
+    <string name="product_price">价格</string>
+    <string name="product_series">系列</string>
+    <string name="product_state">状态</string>
+    <string name="product_btn1">编辑</string>
+    <string name="product_btn2">保存</string>
 </resources>

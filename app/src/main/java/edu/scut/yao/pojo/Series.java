@@ -1,9 +1,10 @@
 package edu.scut.yao.pojo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Series {
+public class Series implements Serializable {
     private int id;
     private String name;
     private ArrayList<Procedure> procedure;
