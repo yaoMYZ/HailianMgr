@@ -191,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/rounded_button_white"
+            android:onClick="clickButton"
             android:text="@string/product_btn1"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
