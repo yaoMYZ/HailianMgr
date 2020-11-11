@@ -1,10 +1,13 @@
 package edu.scut.yao.product;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -24,6 +27,7 @@ public class Product extends AppCompatActivity {
         setContentView(R.layout.product);
         productViewModel = new ProductViewModel();
         initListView();
+        initDrawerLayout();
     }
 
     private void initListView(){
@@ -48,5 +52,10 @@ public class Product extends AppCompatActivity {
 //                Toast.makeText(Product.this,product.getName(),Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void initDrawerLayout(){
+        DrawerLayout drawerLayout = findViewById(R.id.product_drawerLayout);
+        drawerLayout.openDrawer(GravityCompat.END);
     }
 }
