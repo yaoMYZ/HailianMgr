@@ -45,4 +45,5 @@
     <string name="product_state">State</string>
     <string name="product_btn1">Edit</string>
     <string name="product_btn2">Save</string>
+    <string name="product_filter">Filter</string>
 </resources>

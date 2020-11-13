@@ -8,9 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -20,6 +23,7 @@ import edu.scut.yao.adapter.ProductAdapter;
 
 public class Product extends AppCompatActivity {
     private ProductViewModel productViewModel;
+    private boolean showFilter = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +31,37 @@ public class Product extends AppCompatActivity {
         setContentView(R.layout.product);
         productViewModel = new ProductViewModel();
         initListView();
-        initDrawerLayout();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.product_top_menu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.product_search:
+                Toast.makeText(this, "点击了 search ", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.product_filter:
+                DrawerLayout drawerLayout = findViewById(R.id.product_drawerLayout);
+                if(showFilter){
+                    drawerLayout.openDrawer(GravityCompat.END);
+                    showFilter = false;
+                }else{
+                    drawerLayout.closeDrawer(GravityCompat.END);
+                    showFilter = true;
+                }
+                return true;
+            default:    // 如果用户的行为没有被执行，则会调用父类的方法去处理，建议保留。
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 
     private void initListView(){
         // 先拿到数据并放在适配器上
@@ -54,8 +87,4 @@ public class Product extends AppCompatActivity {
         });
     }
 
-    private void initDrawerLayout(){
-        DrawerLayout drawerLayout = findViewById(R.id.product_drawerLayout);
-        drawerLayout.openDrawer(GravityCompat.END);
-    }
 }
